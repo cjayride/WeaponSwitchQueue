@@ -1,0 +1,5 @@
+bin/
+obj/
+Environment.props
+Package/*.dll
+Package/*.zip
