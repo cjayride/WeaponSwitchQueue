@@ -88,13 +88,23 @@ namespace Cjayride.WeaponSwitchQueue
             }
 
             float duration = item.m_shared.m_equipDuration;
-            if (Plugin.InstantEquip.Value)
+            // Sprint calls ClearActionQueue every tick, which deletes an in-progress equip.
+            // Skip that bar while running so the queued weapon still switches.
+            bool immediate = Plugin.InstantEquip.Value || player.IsRunning();
+            if (immediate)
             {
                 item.m_shared.m_equipDuration = 0f;
             }
 
-            player.ToggleEquipped(item);
-            item.m_shared.m_equipDuration = duration;
+            try
+            {
+                player.ToggleEquipped(item);
+            }
+            finally
+            {
+                item.m_shared.m_equipDuration = duration;
+            }
+
             Plugin.Debug("Applied queued switch: " + item.m_shared.m_name);
         }
     }

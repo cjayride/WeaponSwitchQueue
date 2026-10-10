@@ -1,6 +1,6 @@
 {
     "name": "WeaponSwitchQueue",
-    "version_number": "1.0.2",
+    "version_number": "1.0.3",
     "website_url": "https://discord.gg/cjayride",
     "description": "Queues hotbar weapon switches during attack animations and applies them when the swing finishes. Client only.",
     "dependencies": [

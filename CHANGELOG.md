@@ -1,3 +1,7 @@
+# 1.0.3
+
+- Fix: a queued weapon switch still applies while you are sprinting. Valheim clears its equip bar on every sprint tick, so the switch was wiped before it finished. Standing still is unchanged.
+
 # 1.0.2
 
 - Fix: the queue is drained from the plugin's own update loop. 1.0.0 and 1.0.1 attached every patch to `Player.ToggleEquipped`, so a queued switch was never applied.
