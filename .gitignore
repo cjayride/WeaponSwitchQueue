@@ -1,5 +1,9 @@
 bin/
 obj/
+*.user
 Environment.props
 Package/*.dll
 Package/*.zip
+dist/package/
+dist/*.zip
+dist/icon.png

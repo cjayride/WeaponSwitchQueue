@@ -10,7 +10,7 @@ namespace Cjayride.WeaponSwitchQueue
     {
         public const string PluginGuid = "cjayride.weaponswitchqueue";
         public const string PluginName = "WeaponSwitchQueue";
-        public const string PluginVersion = "1.0.3";
+        public const string PluginVersion = "1.0.4";
 
         internal static ConfigEntry<bool> QueueWeaponChanges;
         internal static ConfigEntry<bool> QueueHideWeapons;

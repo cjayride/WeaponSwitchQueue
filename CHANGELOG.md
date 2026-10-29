@@ -1,3 +1,8 @@
+# 1.0.4
+
+- Verified against Valheim 1.0.21 (Release build).
+- BepInEx dependency set to `denikson-BepInExPack_Valheim-5.4.2360`.
+
 # 1.0.3
 
 - Fix: a queued weapon switch still applies while you are sprinting. Valheim clears its equip bar on every sprint tick, so the switch was wiped before it finished. Standing still is unchanged.
